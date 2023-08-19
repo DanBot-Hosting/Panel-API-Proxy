@@ -1,0 +1,20 @@
+{
+  "name": "ptero-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node --no-warnings .",
+    "ts-start": "npx ts-node src/index.ts",
+    "ts-test": "npx ts-node src/test.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "fastify": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
