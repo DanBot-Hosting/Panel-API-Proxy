@@ -161,24 +161,24 @@ fastify.get(`${route_head}/account/servers/:serverID/files/:list?`, async (reque
     reply.send(res.data)
 })
 
-fastify.get(`${route_head}/account/servers/:serverID/files/:contents?`, async (request: any, reply) =>{
-    let res = await axios.get(`${api_url}/account/servers/${request.params.serverID}/files/${request.params.contents}`, {
-        headers: {
-            "Authorization": request.headers.authorization
-        },
-    })
-    reply.send(res.data)
-})
+// fastify.get(`${route_head}/account/servers/:serverID/files/:contents?`, async (request: any, reply) =>{
+//     let res = await axios.get(`${api_url}/account/servers/${request.params.serverID}/files/${request.params.contents}`, {
+//         headers: {
+//             "Authorization": request.headers.authorization
+//         },
+//     })
+//     reply.send(res.data)
+// })
 
 
-fastify.get(`${route_head}/account/servers/:serverID/files/:download?`, async (request: any, reply) =>{
-    let res = await axios.get(`${api_url}/account/servers/${request.params.serverID}/files/${request.params.download}`, {
-        headers: {
-            "Authorization": request.headers.authorization
-        },
-    })
-    reply.send(res.data)
-})
+// fastify.get(`${route_head}/account/servers/:serverID/files/:download?`, async (request: any, reply) =>{
+//     let res = await axios.get(`${api_url}/account/servers/${request.params.serverID}/files/${request.params.download}`, {
+//         headers: {
+//             "Authorization": request.headers.authorization
+//         },
+//     })
+//     reply.send(res.data)
+// })
 
 fastify.put(`${route_head}/account/servers/:serverID/files/rename`, async (request: any, reply) =>{
     let res = await axios.put(`${api_url}/account/servers/${request.params.serverID}/files/rename`, {
